@@ -40,6 +40,10 @@ common css ends
     font-size: 13px;
 }
 
+.fs-14{
+    font-size: 14px;
+}
+
 .fs-16{
     font-size: 16px;
 }
@@ -76,7 +80,7 @@ common css ends
     font-weight: 600;
 }
 
-.openrbol{
+.openbol{
     font-family: var(--ff1);
     font-weight: 700;
 }
@@ -84,6 +88,11 @@ common css ends
 .latobol{
     font-family: var(--ff2);
     font-weight: 700;
+}
+
+.latoreg{
+    font-family: var(--ff2);
+    font-weight: 400;
 }
 
 .text-white{
@@ -106,33 +115,34 @@ common css ends
     text-align: right;
 }
 
+
 /* ======================
 typhography end
 ========================== */
 
 
 .navbar .nav-manu{
-    height: 98px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
 
-.navbar .nav-manu .manulist ul{
+.navbar .nav-manu .nav-manulist ul{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar .nav-manu .manulist ul li a{
+.navbar .nav-manu .nav-manulist ul li a{
     color: #222;
     padding: 0 20px;
     line-height: 42px;
     display: block;
 }
 
-.navbar .nav-manu .manulist ul li a:hover{
+.navbar .nav-manu .nav-manulist ul li a:hover{
     background: var(--brandcol1);
     border-radius: 3px;
     -webkit-border-radius: 3px;
@@ -175,26 +185,14 @@ typhography end
     background: url(../images/banner3.jpg) no-repeat center / cover;
 }
 
-#banner .slick-dots{
-    display: flex;
-    position: absolute;
-    left: 42.5%;
-    bottom: 42px;
-    /* transition: translatex(-45%);
-    -webkit-transition: translatex(-45%);
-    -moz-transition: translatex(-45%);
-    -ms-transition: translatex(-45%);
-    -o-transition: translatex(-45%); */
-}
-
-#banner .slick-dots li button{
+#banner .slick-dots li button {
     font-size: 0;
     border: none;
     outline: none;
 
 }
 
-#banner .slick-dots li{
+#banner .slick-dots li {
     width: 8px;
     height: 8px;
     background: #fff;
@@ -203,8 +201,24 @@ typhography end
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    margin: 0 30px;
+    margin-left: 27px;
     position: relative;
+}
+
+#banner .slick-dots li:first-of-type{
+    margin-left: 0;
+}
+
+#banner .slick-dots{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
 }
 
 #banner .slick-dots li::after{
@@ -227,10 +241,6 @@ typhography end
 
 #banner .slick-dots li.slick-active::after{
     opacity: 1;
-}
-
-#banner .slick-dots li:last-child{
-    margin-right: 0;
 }
 
 #banner .left-arrow{
@@ -311,6 +321,340 @@ typhography end
     banner css end
 ======================= */
 
+#about{
+    height: 100vh;
+    display: flex;
+    margin-top: 50px;
+}
+
+
+#about .about-img{
+    width: 50%;
+    min-height: 100vh;
+    background: url(../images/aboutwe.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/* ---- particles.js container ---- */
+
+#about .about-img #particles-js {
+    width: 100%;
+    height: 580px;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+#about .about-img img{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#about .about-text{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 78px;
+    padding-right: px;
+    background: var(--brandcol1);
+}
+
+#about .about-text p{
+    margin-right: 80px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+#about .about-text .read-btn{
+    border: 1px solid #f3960a;
+    background-color: #e7ad48;
+    line-height: 45px;
+    padding: 0 30px;
+    margin-top: -40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+/* ======================
+    about we css end
+======================= */
+#gallery{
+    height: 753px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery-text{
+    text-align: center;
+}
+
+.heading h3{
+    color: var(--brandcol2);
+}
+
+.heading p{
+    color: #062033;
+    padding: 0 120px;
+    margin-top: 27px;
+}
+
+.gallery-text .heading-line{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-text .heading-line .line{
+    width: 90px;
+    height: 1px;
+    background: var(--brandcol1);
+    margin-top: 10px;
+}
+
+.gallery-text .heading-line .line-icon i{
+    color: var(--brandcol1);
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.gallery-text .gallery-manu ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.gallery-text .gallery-manu ul li {
+    color: #222;
+    padding: 0 20px;
+    line-height: 26px;
+    display: block;
+    margin-top: 45px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.gallery-text .gallery-manu ul li:last-child{
+    margin-right: 0;
+}
+
+/* .gallery-text .gallery-manu ul li.active{
+    background: var(--brandcol2);
+    color: #fff;
+    border-radius: 8px;
+} */
+
+.gallery-text .gallery-manu ul li.mixitup-control-active{
+    background: var(--brandcol2);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.gallery-text .gallery-manu ul li:hover {
+    color: #fff;
+    background: var(--brandcol2);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#gallery .gallery-full{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery .gallery-full .gallery-item{
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery .gallery-full .gallery-item img{
+    width: 100%;
+}
+
+#gallery .gallery-full .gallery-item .gl-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 193, 85, 0.9);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
+}
+
+#gallery .gallery-full .gallery-item:hover .gl-overlay{
+    left: 0;
+}
+
+.gallery-item .gl-overlay .gl-icon{
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+    transform: translate(-50%);
+    margin-bottom: 25px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.gallery-item .gl-overlay .gl-icon a{
+    color: #fff;
+    line-height: 36px;
+}
+
+/* ======================
+    gallery css end
+======================= */
+
+/* body{
+    overflow-x: hidden;
+} */
+
+.video-gallery{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+}
+
+.video-content{
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.full-screen{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+}
+
+.full-screen video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-overlay{
+    width: 100%;
+    height: 100vh;
+    background: rgba(89, 137, 228, 0.555);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.text-content{
+    z-index: 3;
+}
+
+.text-content p{
+    display: block;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    background: rgba(23, 98, 238, 0.555);
+    color: #fff;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.play-icon i {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+
+
+/* ======================
+    video gallery css end
+======================= *
+
+/* #video-gallery{
+    height: 400px;
+    background: #3aeeee;
+    
+}
+
+#video-gallery video{
+    width: 100%;
+}
+
+#video-gallery .container .play-icon{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#video-gallery .container .play-icon i{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} */
+
+/* ======================
+    video gallery css end
+======================= */
+
 
 #services{
     height: 740px;
@@ -320,11 +664,7 @@ typhography end
 
 
 
-#about {
-    height: 623px;
-    margin-top: 50px;
-    background: #3aeeee;
-}
+
 
 #portfolio{
     height: 805px;

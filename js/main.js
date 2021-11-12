@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     // navbar fix
 
-    if(scrolling > 100){
+    if(scrolling > 50){
         $('nav').addClass('navbar-fixed');
     }else{
         $('nav').removeClass('navbar-fixed');
@@ -29,12 +29,28 @@ $(document).ready(function(){
         },2000);
     });
 
+    // gallery manu add class
+
+    $('.gallery-manu li').on('click',function(){
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
     // banner slider
 
     $('.banner-slider').slick({
         dots: true,
         prevArrow: '<i class="fas fa-chevron-left left-arrow"></i>',
         nextArrow: '<i class="fas fa-chevron-right right-arrow"></i>'
+    });
+
+    // gallery fiiter with mixitup
+    var mixer = mixitup('.gallery-full');
+
+    // gallery popup
+    $('.venobox').venobox({
+        spinner: 'cube-grid',
+        spinColor: '#ffc155',
+        bgColor: '#ff0000'
     });
 
 });
