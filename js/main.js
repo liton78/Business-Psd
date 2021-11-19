@@ -53,4 +53,48 @@ $(document).ready(function(){
         bgColor: '#ff0000'
     });
 
+    // testimonial slider
+    $('.testimonial-slider').slick({
+        dots: true,
+        arrows: false,
+        centerMode: true,
+        centerPadding: 0,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+
+    });
+
+    // counter-up plugin
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
 });
+
+// animate css controler
+new WOW().init();
+
+// parallax bg 
+$('.funfact').parallax({imageSrc: 'images/parallaxbg01.jpg'});
+
+$('#parallax-bg').parallax({imageSrc: 'images/parallax4.jpg'});
+
+
+// type js
+var typed = new Typed('.typeing-js', {
+    strings: [
+        'Join our website',
+        'and see our',
+        'photography'
+    ],
+    smartBackspace: false,
+    loop: true,
+    typeSpeed: 200,
+    backSpeed: 150,
+    cursorChar: '!',
+    bindInputFocusEvents: true,
+    shuffle: true,
+});
+
+});
+
+
